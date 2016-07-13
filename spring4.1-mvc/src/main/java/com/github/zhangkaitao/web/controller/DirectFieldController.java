@@ -1,10 +1,6 @@
 package com.github.zhangkaitao.web.controller;
 
-import com.github.zhangkaitao.web.model.User;
-import org.springframework.beans.DirectFieldAccessor;
-import org.springframework.stereotype.Controller;
 import org.springframework.validation.DataBinder;
-import org.springframework.validation.DirectFieldBindingResult;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

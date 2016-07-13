@@ -80,6 +80,18 @@
             <artifactId>jetty-server</artifactId>
             <version>${jetty.version}</version>
             <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.eclipse.jetty.orbit</groupId>
+                    <artifactId>javax.servlet</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.0.1</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
@@ -94,7 +106,7 @@
     <build>
         <plugins>
 
-            <plugin>
+            <!--<plugin>
                 <groupId>com.google.protobuf.tools</groupId>
                 <artifactId>maven-protoc-plugin</artifactId>
                 <version>0.1.10</version>
@@ -116,7 +128,7 @@
                 <configuration>
                     <protocExecutable>D:/software/protoc.exe</protocExecutable>
                 </configuration>
-            </plugin>
+            </plugin>-->
 
             <!-- jetty插件 -->
             <plugin>

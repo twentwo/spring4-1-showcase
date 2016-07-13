@@ -5,17 +5,14 @@ import com.github.zhangkaitao.web.controller.MyExtensionRegistryInitializer;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.webapp.WebAppContext;
 import org.junit.AfterClass;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
-import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.http.converter.protobuf.ExtensionRegistryInitializer;
 import org.springframework.http.converter.protobuf.ProtobufHttpMessageConverter;
-import org.springframework.test.web.client.MockRestServiceServer;
 import org.springframework.web.client.RestTemplate;
 
 import java.net.URI;
@@ -63,7 +60,7 @@ public class ProtoTest {
     public void testRead() {
         HttpHeaders headers = new HttpHeaders();
         RequestEntity<UserProtos.User> requestEntity =
-                new RequestEntity<UserProtos.User>(headers, HttpMethod.POST, URI.create(baseUri + "/proto/read"));
+                new RequestEntity<UserProtos.User>(headers, HttpMethod.POST, URI.create(baseUri + "proto/read"));
 
         ResponseEntity<UserProtos.User> responseEntity =
                 restTemplate.exchange(requestEntity, UserProtos.User.class);

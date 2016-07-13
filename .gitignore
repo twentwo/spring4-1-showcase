@@ -10,3 +10,5 @@ gen
 *.war
 *.ear
 hs_err_pid*
+pb/
+target/

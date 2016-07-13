@@ -2,7 +2,6 @@ package com.github.zhangkaitao;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.BeanWrapper;
 import org.springframework.beans.DirectFieldAccessor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
