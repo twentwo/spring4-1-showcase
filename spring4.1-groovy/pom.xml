@@ -91,7 +91,7 @@
 
 
     <build>
-        <finalName>spring4</finalName>
+        <finalName>spring4-1</finalName>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
