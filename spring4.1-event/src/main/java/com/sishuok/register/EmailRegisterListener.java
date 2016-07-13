@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * <p>User: Zhang Kaitao
- * <p>Date: 13-7-8 ÏÂÎç9:37
+ * <p>Date: 13-7-8 ä¸‹åˆ9:37
  * <p>Version: 1.0
  */
 @Component
@@ -19,6 +19,6 @@ public class EmailRegisterListener implements ApplicationListener<RegisterEvent>
     @Async
     @Override
     public void onApplicationEvent(final RegisterEvent event) {
-        System.out.println("×¢²á³É¹¦£¬·¢ËÍÈ·ÈÏÓÊ¼ş¸ø£º" + ((User)event.getSource()).getUsername());
+        System.out.println("æ³¨å†ŒæˆåŠŸï¼Œå‘é€ç¡®è®¤é‚®ä»¶ç»™ï¼š" + ((User)event.getSource()).getUsername());
     }
 }

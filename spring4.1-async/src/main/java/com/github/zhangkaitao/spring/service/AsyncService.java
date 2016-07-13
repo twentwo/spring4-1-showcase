@@ -45,7 +45,7 @@ import java.util.concurrent.Callable;
 /**
  * User: zhangkaitao
  * Date: 14-7-31
- * Time: ÏÂÎç7:08
+ * Time: ä¸‹åˆ7:08
  * Version: 1.0
  */
 @Service
@@ -60,7 +60,7 @@ public class AsyncService {
         return "123";
     }
 
-    //·µ»ØÖµ±ØĞëÊÇListenableFuture/Future£¬ÒòÎªÊÇÊµÏÖµÄÎÊÌâ£¨return ((AsyncListenableTaskExecutor) executor).submitListenable(task);£©
+    //è¿”å›å€¼å¿…é¡»æ˜¯ListenableFuture/Futureï¼Œå› ä¸ºæ˜¯å®ç°çš„é—®é¢˜ï¼ˆreturn ((AsyncListenableTaskExecutor) executor).submitListenable(task);ï¼‰
     public ListenableFuture<String> asyncGet2() {
         return new AsyncResult<String>("123");
     }

@@ -8,10 +8,10 @@ import org.springframework.util.backoff.ExponentialBackOff;
 import org.springframework.util.backoff.FixedBackOff;
 
 /**
- * ÍË±ÜÊµÏÖ£¨±ÈÈçÍøÂçÁ¬½ÓÊ§°ÜºóÑÓ³Ù¶à¾ÃÖØÊÔ£©
+ * é€€é¿å®ç°ï¼ˆæ¯”å¦‚ç½‘ç»œè¿æ¥å¤±è´¥åå»¶è¿Ÿå¤šä¹…é‡è¯•ï¼‰
  * User: zhangkaitao
  * Date: 14-8-1
- * Time: ÏÂÎç12:50
+ * Time: ä¸‹åˆ12:50
  * Version: 1.0
  */
 public class BackOffTest {
@@ -24,7 +24,7 @@ public class BackOffTest {
         BackOffExecution execution = backOff.start();
 
         for(int i = 1; i <= 10; i++) {
-            //Ã¿´ÎÖØÊÔÊ±¼äÊÇ100ºÁÃë
+            //æ¯æ¬¡é‡è¯•æ—¶é—´æ˜¯100æ¯«ç§’
             System.out.println(execution.nextBackOff());
         }
         Assert.assertEquals(BackOffExecution.STOP, execution.nextBackOff());
@@ -33,10 +33,10 @@ public class BackOffTest {
 
     @Test
     public void testExponentialBackOff() {
-        long initialInterval = 100;//³õÊ¼¼ä¸ô
-        long maxInterval = 5 * 1000L;//×î´ó¼ä¸ô
-        long maxElapsedTime = 50 * 1000L;//×î´óÊ±¼ä¼ä¸ô
-        double multiplier = 1.5;//µİÔö±¶Êı£¨¼´ÏÂ´Î¼ä¸ôÊÇÉÏ´ÎµÄ¶àÉÙ±¶£©
+        long initialInterval = 100;//åˆå§‹é—´éš”
+        long maxInterval = 5 * 1000L;//æœ€å¤§é—´éš”
+        long maxElapsedTime = 50 * 1000L;//æœ€å¤§æ—¶é—´é—´éš”
+        double multiplier = 1.5;//é€’å¢å€æ•°ï¼ˆå³ä¸‹æ¬¡é—´éš”æ˜¯ä¸Šæ¬¡çš„å¤šå°‘å€ï¼‰
         ExponentialBackOff backOff = new ExponentialBackOff(initialInterval, multiplier);
         backOff.setMaxInterval(maxInterval);
         //currentElapsedTime = interval1 + interval2 + ... + intervalN;

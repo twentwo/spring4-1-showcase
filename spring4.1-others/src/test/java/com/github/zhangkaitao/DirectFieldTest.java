@@ -11,7 +11,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 /**
  * User: zhangkaitao
  * Date: 14-7-31
- * Time: ÏÂÎç8:00
+ * Time: ä¸‹åˆ8:00
  * Version: 1.0
  */
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -21,13 +21,13 @@ public class DirectFieldTest {
     private Bean bean;
     @Test
     public void testDirectFieldAccess() { //DirectFieldBindingResult
-        //Ç¶Ì×ÉèÖÃ/·ÃÎÊ¶ÔÏó×Ö¶ÎÊı¾İ
+        //åµŒå¥—è®¾ç½®/è®¿é—®å¯¹è±¡å­—æ®µæ•°æ®
         DirectFieldAccessor accessor = new DirectFieldAccessor(bean);
-        //Èç¹ûÇ¶Ì×¶ÔÏóÎªnull£¬×Ö¶Î´´½¨
+        //å¦‚æœåµŒå¥—å¯¹è±¡ä¸ºnullï¼Œå­—æ®µåˆ›å»º
         accessor.setAutoGrowNestedPaths(true);
-        //ÉèÖÃ×Ö¶ÎÖµ
+        //è®¾ç½®å­—æ®µå€¼
         accessor.setPropertyValue("bean2.name", "zhangsan");
-        //¶ÁÈ¡×Ö¶ÎÖµ
+        //è¯»å–å­—æ®µå€¼
         System.out.println(accessor.getPropertyValue("bean2.name"));
     }
 }

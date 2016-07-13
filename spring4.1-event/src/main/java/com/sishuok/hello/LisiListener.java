@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * <p>User: Zhang Kaitao
- * <p>Date: 13-7-8 下午9:10
+ * <p>Date: 13-7-8 涓嬪崍9:10
  * <p>Version: 1.0
  */
 @Component
@@ -20,7 +20,7 @@ public class LisiListener implements ApplicationListener<ApplicationEvent> {
     @Override
     public void onApplicationEvent(final ApplicationEvent event) {
         if(event instanceof ContentEvent) {
-            System.out.println("李四收到了新的内容：" + event.getSource());
+            System.out.println("鏉庡洓鏀跺埌浜嗘柊鐨勫唴瀹癸細" + event.getSource());
         }
     }
 }

@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * <p>User: Zhang Kaitao
- * <p>Date: 13-7-8 下午9:14
+ * <p>Date: 13-7-8 涓嬪崍9:14
  * <p>Version: 1.0
  */
 @Component
@@ -27,7 +27,7 @@ public class WangwuListener implements SmartApplicationListener {
     }
     @Override
     public void onApplicationEvent(final ApplicationEvent event) {
-        System.out.println("王五在孙六之前收到新的内容：" + event.getSource());
+        System.out.println("鐜嬩簲鍦ㄥ瓩鍏箣鍓嶆敹鍒版柊鐨勫唴瀹癸細" + event.getSource());
         throw new RuntimeException("error");
     }
     @Override

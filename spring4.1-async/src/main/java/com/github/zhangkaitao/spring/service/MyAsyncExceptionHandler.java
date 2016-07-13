@@ -7,13 +7,13 @@ import java.lang.reflect.Method;
 /**
  * User: zhangkaitao
  * Date: 14-7-31
- * Time: ÏÂÎç7:10
+ * Time: ä¸‹åˆ7:10
  * Version: 1.0
  */
 public class MyAsyncExceptionHandler implements AsyncUncaughtExceptionHandler {
 
     @Override
     public void handleUncaughtException(Throwable throwable, Method method, Object... args) {
-        System.out.println("µ÷ÓÃÒì²½ÈÎÎñ³ö´íÁË, message : " + throwable.getMessage());
+        System.out.println("è°ƒç”¨å¼‚æ­¥ä»»åŠ¡å‡ºé”™äº†, message : " + throwable.getMessage());
     }
 }

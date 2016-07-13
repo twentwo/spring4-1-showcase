@@ -14,7 +14,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 /**
  * <p>User: Zhang Kaitao
- * <p>Date: 13-7-8 ÏÂÎç9:06
+ * <p>Date: 13-7-8 ä¸‹åˆ9:06
  * <p>Version: 1.0
  */
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -25,6 +25,6 @@ public class HelloIT {
     private ApplicationContext applicationContext;
     @Test
     public void testPublishEvent() {
-        applicationContext.publishEvent(new ContentEvent("½ñÄêÊÇÁúÄêµÄ²©¿Í¸üĞÂÁË"));
+        applicationContext.publishEvent(new ContentEvent("ä»Šå¹´æ˜¯é¾™å¹´çš„åšå®¢æ›´æ–°äº†"));
     }
 }

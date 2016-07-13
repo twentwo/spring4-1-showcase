@@ -9,14 +9,14 @@ import java.io.Serializable;
 
 /**
  * <p>User: Zhang Kaitao
- * <p>Date: 13-7-8 下午9:37
+ * <p>Date: 13-7-8 涓嬪崍9:37
  * <p>Version: 1.0
  */
 public class User implements Serializable {
     private String username;
     private String password;
 
-    //为了测试方便 简化了实现
+    //涓轰簡娴嬭瘯鏂逛究 绠�鍖栦簡瀹炵幇
     public User(final String username, final String password) {
         this.username = username;
         this.password = password;

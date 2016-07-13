@@ -19,7 +19,7 @@ import java.util.Properties;
 /**
  * User: zhangkaitao
  * Date: 14-7-31
- * Time: ÏÂÎç8:00
+ * Time: ä¸‹åˆ8:00
  * Version: 1.0
  */
 @ActiveProfiles("production")
@@ -38,11 +38,11 @@ public class YamlTest {
     private Properties yamlProperties;
     @Test
     public void testYmlMap() {
-        //Map£¨²»ÄÜÖ±½Ó×¢Èë@Autowired Map£©
-        //Çë²Î¿¼ MapÒÀÀµ×¢Èë£¨http://jinnianshilongnian.iteye.com/blog/1989379£©
+        //Mapï¼ˆä¸èƒ½ç›´æ¥æ³¨å…¥@Autowired Mapï¼‰
+        //è¯·å‚è€ƒ Mapä¾èµ–æ³¨å…¥ï¼ˆhttp://jinnianshilongnian.iteye.com/blog/1989379ï¼‰
         System.out.println(this.yamlMap);
         Map<String, Object> yamlMap = ctx.getBean("yamlMap", Map.class);
-        //ĞèÒªsnakeyaml ¸Ã¹¦ÄÜÊÇ´Óspring-bootÒıÈëµÄ
+        //éœ€è¦snakeyaml è¯¥åŠŸèƒ½æ˜¯ä»spring-bootå¼•å…¥çš„
         Map<String, Object> env = (Map<String, Object>) yamlMap.get("env");
         Map<String, Object> one = (Map<String, Object>) env.get("one");
         Assert.assertEquals("zhangsan", one.get("name"));
@@ -56,7 +56,7 @@ public class YamlTest {
 
         //Properties
         Assert.assertEquals("zhangsan", yamlProperties.getProperty("env.one.name"));
-        //getPropertyÈç¹û·µ»ØµÄÊı¾İÊ±·ÇStringµÄÔò·µ»Ønull
+        //getPropertyå¦‚æœè¿”å›çš„æ•°æ®æ—¶éStringçš„åˆ™è¿”å›null
         Assert.assertEquals(1, yamlProperties.get("env.two[0].a"));
         Assert.assertEquals("3", yamlProperties.getProperty("env.two[1].c"));
         Assert.assertEquals("", yamlProperties.getProperty("env.three"));

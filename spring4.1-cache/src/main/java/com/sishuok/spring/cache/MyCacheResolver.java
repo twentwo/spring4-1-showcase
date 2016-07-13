@@ -13,7 +13,7 @@ import java.util.*;
 /**
  * User: zhangkaitao
  * Date: 14-8-1
- * Time: ÉÏÎç11:21
+ * Time: ä¸Šåˆ11:21
  * Version: 1.0
  */
 public class MyCacheResolver implements CacheResolver {

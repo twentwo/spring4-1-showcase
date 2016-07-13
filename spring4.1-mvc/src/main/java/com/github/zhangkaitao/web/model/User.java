@@ -7,7 +7,7 @@ import java.io.Serializable;
 /**
  * User: zhangkaitao
  * Date: 14-8-4
- * Time: ÏÂÎç2:23
+ * Time: ä¸‹åˆ2:23
  * Version: 1.0
  */
 public class User implements Serializable {

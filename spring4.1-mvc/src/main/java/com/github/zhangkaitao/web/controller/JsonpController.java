@@ -10,7 +10,7 @@ import javax.naming.ldap.Control;
 /**
  * User: zhangkaitao
  * Date: 14-8-4
- * Time: 下午8:32
+ * Time: 涓嬪崍8:32
  * Version: 1.0
  */
 
@@ -18,7 +18,7 @@ import javax.naming.ldap.Control;
 public class JsonpController {
 
     @RequestMapping("/jsonp1")
-    public User jsonp1() {//没有@ResponseBody 直接走MappingJackson2JsonView
+    public User jsonp1() {//娌℃湁@ResponseBody 鐩存帴璧癕appingJackson2JsonView
         return new User(1L, "zhangsan");
     }
 

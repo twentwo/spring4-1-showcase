@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * <p>User: Zhang Kaitao
- * <p>Date: 13-7-8 下午9:10
+ * <p>Date: 13-7-8 涓嬪崍9:10
  * <p>Version: 1.0
  */
 @Component
@@ -18,6 +18,6 @@ public class ZhangsanListener implements ApplicationListener<ContentEvent> {
 
     @Override
     public void onApplicationEvent(final ContentEvent event) {
-        System.out.println("张三收到了新的内容：" + event.getSource());
+        System.out.println("寮犱笁鏀跺埌浜嗘柊鐨勫唴瀹癸細" + event.getSource());
     }
 }

@@ -5,12 +5,12 @@ import org.springframework.util.ErrorHandler;
 /**
  * User: zhangkaitao
  * Date: 14-8-1
- * Time: ÉÏÎç9:01
+ * Time: ä¸Šåˆ9:01
  * Version: 1.0
  */
 public class MyErrorHandler implements ErrorHandler {
     @Override
     public void handleError(Throwable throwable) {
-        System.out.println("ÊÂ¼şÊ§°ÜÁË, error message : " + throwable.getMessage());
+        System.out.println("äº‹ä»¶å¤±è´¥äº†, error message : " + throwable.getMessage());
     }
 }

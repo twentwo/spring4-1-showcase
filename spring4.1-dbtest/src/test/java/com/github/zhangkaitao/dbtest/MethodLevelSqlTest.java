@@ -22,7 +22,7 @@ import javax.sql.DataSource;
 /**
  * User: zhangkaitao
  * Date: 14-8-4
- * Time: ÉÏÎç8:57
+ * Time: ä¸Šåˆ8:57
  * Version: 1.0
  */
 @RunWith(SpringJUnit4ClassRunner.class)

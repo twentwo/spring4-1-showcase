@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 /**
  * User: zhangkaitao
  * Date: 14-8-4
- * Time: ÏÂÎç2:22
+ * Time: ä¸‹åˆ2:22
  * Version: 1.0
  */
 @Controller
@@ -26,7 +26,7 @@ public class MyViewController {
     }
 
     @RequestMapping("/json")
-    public User user() {//Ä¬ÈÏÊÓÍ¼½âÎöÆ÷½âÎö
+    public User user() {//é»˜è®¤è§†å›¾è§£æå™¨è§£æ
         return new User(1L, "zhangsan");
     }
 

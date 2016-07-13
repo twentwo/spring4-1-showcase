@@ -10,7 +10,7 @@ import java.util.Collection;
 /**
  * User: zhangkaitao
  * Date: 14-8-4
- * Time: ÏÂÎç8:34
+ * Time: ä¸‹åˆ8:34
  * Version: 1.0
  */
     @Order(2)
@@ -18,6 +18,6 @@ import java.util.Collection;
     public class JsonpAdvice extends AbstractJsonpResponseBodyAdvice {
 
         public JsonpAdvice() {
-            super("callback", "jsonp");  //Ö¸¶¨jsonpParameterNames
+            super("callback", "jsonp");  //æŒ‡å®šjsonpParameterNames
         }
     }

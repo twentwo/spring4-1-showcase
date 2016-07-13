@@ -15,7 +15,7 @@ import java.util.concurrent.Future;
 /**
  * User: zhangkaitao
  * Date: 14-7-31
- * Time: ÏÂÎç7:12
+ * Time: ä¸‹åˆ7:12
  * Version: 1.0
  */
 
@@ -34,7 +34,7 @@ public class AsyncServiceTest {
 
     @Test
     public void testAsyncGet1() throws Exception {
-        //Òì²½ÈÎÎñÖ±½Ó·µ»Ø£¬ËùÒÔÊÇnull£¬²»»áÓĞ½á¹û£¬Èç¹ûÏëÒª»ñÈ¡½á¹ûÇë·µ»ØAsyncResult
+        //å¼‚æ­¥ä»»åŠ¡ç›´æ¥è¿”å›ï¼Œæ‰€ä»¥æ˜¯nullï¼Œä¸ä¼šæœ‰ç»“æœï¼Œå¦‚æœæƒ³è¦è·å–ç»“æœè¯·è¿”å›AsyncResult
         Assert.assertEquals(null, asyncService.asyncGet1());
         Thread.sleep(1000L);
     }
@@ -45,13 +45,13 @@ public class AsyncServiceTest {
         SuccessCallback<String> successCallback = new SuccessCallback<String>() {
             @Override
             public void onSuccess(String str) {
-                System.out.println("Òì²½»Øµ÷³É¹¦ÁË, return : " + str);
+                System.out.println("å¼‚æ­¥å›è°ƒæˆåŠŸäº†, return : " + str);
             }
         };
         FailureCallback failureCallback = new FailureCallback() {
             @Override
             public void onFailure(Throwable throwable) {
-                System.out.println("Òì²½»Øµ÷Ê§°ÜÁË, exception message : " + throwable.getMessage());
+                System.out.println("å¼‚æ­¥å›è°ƒå¤±è´¥äº†, exception message : " + throwable.getMessage());
             }
         };
 

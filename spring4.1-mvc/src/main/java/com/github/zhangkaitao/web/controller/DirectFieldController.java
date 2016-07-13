@@ -14,7 +14,7 @@ import java.io.Serializable;
 /**
  * User: zhangkaitao
  * Date: 14-8-6
- * Time: ÉÏÎç8:45
+ * Time: ä¸Šåˆ8:45
  * Version: 1.0
  */
 @RestController
@@ -28,7 +28,7 @@ public class DirectFieldController {
 
     @InitBinder
     public void initBinder(DataBinder dataBinder) {
-        dataBinder.initDirectFieldAccess();//Ö±½Ó×Ö¶Î·ÃÎÊ
+        dataBinder.initDirectFieldAccess();//ç›´æ¥å­—æ®µè®¿é—®
     }
 
     static class MyUser implements Serializable {

@@ -15,7 +15,7 @@ import org.springframework.expression.spel.standard.SpelExpressionParser;
 /**
  * User: zhangkaitao
  * Date: 14-8-1
- * Time: 下午2:19
+ * Time: 涓嬪崍2:19
  * Version: 1.0
  */
 public class SpELTest {
@@ -28,8 +28,8 @@ public class SpELTest {
         SpelExpression expression = parser.parseRaw("new String('haha')");
         Assert.assertEquals("haha", expression.getValue());
 
-        //人工编译
-        //或者使用expression.compileExpression();
+        //浜哄伐缂栬瘧
+        //鎴栬�呬娇鐢╡xpression.compileExpression();
         SpelCompiler spelCompiler = SpelCompiler.getCompiler(getClass().getClassLoader());
         CompiledExpression compiledExpression = spelCompiler.compile((SpelNodeImpl) expression.getAST());
         Assert.assertEquals("haha", compiledExpression.getValue(null, null));

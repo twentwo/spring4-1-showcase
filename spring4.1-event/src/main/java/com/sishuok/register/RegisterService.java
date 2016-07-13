@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 
 /**
  * <p>User: Zhang Kaitao
- * <p>Date: 13-7-8 ÏÂÎç9:34
+ * <p>Date: 13-7-8 ä¸‹åˆ9:34
  * <p>Version: 1.0
  */
 @Service
@@ -21,7 +21,7 @@ public class RegisterService {
     private ApplicationContext applicationContext;
 
     public void register(String username, String password) {
-        System.out.println(username + "×¢²á³É¹¦£¡");
+        System.out.println(username + "æ³¨å†ŒæˆåŠŸï¼");
         publishRegisterEvent(new User(username, password));
     }
 

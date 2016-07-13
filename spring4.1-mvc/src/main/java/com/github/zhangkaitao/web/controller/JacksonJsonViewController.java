@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * User: zhangkaitao
  * Date: 14-8-4
- * Time: 下午2:50
+ * Time: 涓嬪崍2:50
  * Version: 1.0
  */
 @RestController
@@ -28,7 +28,7 @@ public class JacksonJsonViewController {
     }
 
     @RequestMapping("/jackson3")
-    @JsonView(User.AllView.class) //可以省略
+    @JsonView(User.AllView.class) //鍙互鐪佺暐
     public User test3() {
         return new User(1L, "zhangsan");
     }

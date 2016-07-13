@@ -5,13 +5,13 @@ import org.springframework.beans.factory.SmartInitializingSingleton;
 /**
  * User: zhangkaitao
  * Date: 14-7-31
- * Time: ÏÂÎç8:11
+ * Time: ä¸‹åˆ8:11
  * Version: 1.0
  */
 public class MySmartInitializingSingleton implements SmartInitializingSingleton {
-    //ËùÓĞ·Çlazyµ¥ÀıBeanÊµÀı»¯Íê³Éºó£¬»áµ÷ÓÃ¸Ã·½·¨
+    //æ‰€æœ‰élazyå•ä¾‹Beanå®ä¾‹åŒ–å®Œæˆåï¼Œä¼šè°ƒç”¨è¯¥æ–¹æ³•
     @Override
     public void afterSingletonsInstantiated() {
-        System.out.println("µ¥ÀıBeanÊµÀı»¯Íê³ÉÁË");
+        System.out.println("å•ä¾‹Beanå®ä¾‹åŒ–å®Œæˆäº†");
     }
 }

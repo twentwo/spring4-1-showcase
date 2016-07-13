@@ -23,7 +23,7 @@ import java.net.URI;
 /**
 * User: zhangkaitao
 * Date: 14-8-5
-* Time: ÉÏÎç8:48
+* Time: ä¸Šåˆ8:48
 * Version: 1.0
 */
 public class ProtoTest {
@@ -35,12 +35,12 @@ public class ProtoTest {
 
     @BeforeClass
     public static void beforeClass() throws Exception {
-        //´´½¨Ò»¸öserver
+        //åˆ›å»ºä¸€ä¸ªserver
         server = new Server(8080);
         WebAppContext context = new WebAppContext();
         String webapp = "spring4.1-mvc/src/main/webapp";
-        context.setDescriptor(webapp + "/WEB-INF/web.xml");  //Ö¸¶¨web.xmlÅäÖÃÎÄ¼ş
-        context.setResourceBase(webapp);  //Ö¸¶¨webappÄ¿Â¼
+        context.setDescriptor(webapp + "/WEB-INF/web.xml");  //æŒ‡å®šweb.xmlé…ç½®æ–‡ä»¶
+        context.setResourceBase(webapp);  //æŒ‡å®šwebappç›®å½•
         context.setContextPath("/");
         context.setParentLoaderPriority(true);
 
@@ -55,7 +55,7 @@ public class ProtoTest {
 
     @AfterClass
     public static void afterClass() throws Exception {
-        server.stop(); //µ±²âÊÔ½áÊøÊ±Í£Ö¹·şÎñÆ÷
+        server.stop(); //å½“æµ‹è¯•ç»“æŸæ—¶åœæ­¢æœåŠ¡å™¨
     }
 
 

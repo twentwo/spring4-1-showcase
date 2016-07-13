@@ -3,7 +3,7 @@ package com.github.zhangkaitao;
 /**
  * User: zhangkaitao
  * Date: 14-7-31
- * Time: ÏÂÎç7:59
+ * Time: ä¸‹åˆ7:59
  * Version: 1.0
  */
 public class Bean {

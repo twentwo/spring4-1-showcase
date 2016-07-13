@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * <p>User: Zhang Kaitao
- * <p>Date: 13-7-8 下午9:37
+ * <p>Date: 13-7-8 涓嬪崍9:37
  * <p>Version: 1.0
  */
 @Component
@@ -19,6 +19,6 @@ public class IndexRegisterListener implements ApplicationListener<RegisterEvent>
     @Async
     @Override
     public void onApplicationEvent(final RegisterEvent event) {
-        System.out.println("注册成功，索引用户信息：" + ((User)event.getSource()).getUsername());
+        System.out.println("娉ㄥ唽鎴愬姛锛岀储寮曠敤鎴蜂俊鎭細" + ((User)event.getSource()).getUsername());
     }
 }

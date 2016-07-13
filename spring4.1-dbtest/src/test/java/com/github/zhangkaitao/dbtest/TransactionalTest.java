@@ -27,7 +27,7 @@ import javax.sql.DataSource;
 /**
  * User: zhangkaitao
  * Date: 14-8-4
- * Time: ÉÏÎç8:57
+ * Time: ä¸Šåˆ8:57
  * Version: 1.0
  */
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -56,7 +56,7 @@ public class TransactionalTest {
             @SqlConfig(encoding = "utf-8", separator = ";", commentPrefix = "--",
                     dataSource = "dataSource1", transactionManager = "txManager1"))
     public void test01_simple() {
-        //ÅĞ¶ÏÊÇÔÚÊÂÎñÖĞÖ´ĞĞ
+        //åˆ¤æ–­æ˜¯åœ¨äº‹åŠ¡ä¸­æ‰§è¡Œ
         Assert.assertTrue(TransactionSynchronizationManager.isActualTransactionActive());
         Assert.assertTrue(TestTransaction.isActive());
         Assert.assertEquals(

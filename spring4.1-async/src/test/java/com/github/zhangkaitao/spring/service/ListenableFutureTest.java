@@ -9,7 +9,7 @@ import java.util.concurrent.Callable;
 /**
  * User: zhangkaitao
  * Date: 14-8-1
- * Time: ÉÏÎç8:40
+ * Time: ä¸Šåˆ8:40
  * Version: 1.0
  */
 public class ListenableFutureTest {
@@ -19,13 +19,13 @@ public class ListenableFutureTest {
         SuccessCallback<String> successCallback = new SuccessCallback<String>() {
             @Override
             public void onSuccess(String str) {
-                System.out.println("Òì²½»Øµ÷³É¹¦ÁË, return : " + str);
+                System.out.println("å¼‚æ­¥å›è°ƒæˆåŠŸäº†, return : " + str);
             }
         };
         FailureCallback failureCallback = new FailureCallback() {
             @Override
             public void onFailure(Throwable throwable) {
-                System.out.println("Òì²½»Øµ÷Ê§°ÜÁË, exception message : " + throwable.getMessage());
+                System.out.println("å¼‚æ­¥å›è°ƒå¤±è´¥äº†, exception message : " + throwable.getMessage());
             }
         };
 
@@ -45,19 +45,19 @@ public class ListenableFutureTest {
         ListenableFutureCallback<String> listenableFutureCallback = new ListenableFutureCallback<String>() {
             @Override
             public void onFailure(Throwable throwable) {
-                System.out.println("Òì²½»Øµ÷Ê§°ÜÁË, exception message : " + throwable.getMessage());
+                System.out.println("å¼‚æ­¥å›è°ƒå¤±è´¥äº†, exception message : " + throwable.getMessage());
             }
 
             @Override
             public void onSuccess(String str) {
-                System.out.println("Òì²½»Øµ÷³É¹¦ÁË, return : " + str);
+                System.out.println("å¼‚æ­¥å›è°ƒæˆåŠŸäº†, return : " + str);
             }
         };
 
         ListenableFutureTask<String> future2 = new ListenableFutureTask(new Callable() {
             @Override
             public String call() throws Exception {
-                throw new RuntimeException("³ö´íÁË");
+                throw new RuntimeException("å‡ºé”™äº†");
             }
         });
         future2.addCallback(listenableFutureCallback);

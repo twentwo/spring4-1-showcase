@@ -40,7 +40,7 @@ import static org.springframework.test.web.client.response.MockRestResponseCreat
 /**
 * User: zhangkaitao
 * Date: 14-8-5
-* Time: ÉÏÎç8:48
+* Time: ä¸Šåˆ8:48
 * Version: 1.0
 */
 @RunWith(SpringJUnit4ClassRunner.class)
