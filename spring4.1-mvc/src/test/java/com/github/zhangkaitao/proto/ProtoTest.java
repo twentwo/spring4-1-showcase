@@ -73,7 +73,7 @@ public class ProtoTest {
         UserProtos.User user = UserProtos.User.newBuilder().setId(1).setName("zhangsan").build();
         HttpHeaders headers = new HttpHeaders();
         RequestEntity<UserProtos.User> requestEntity =
-                new RequestEntity<UserProtos.User>(user, headers, HttpMethod.POST, URI.create(baseUri + "/proto/write"));
+                new RequestEntity<UserProtos.User>(user, headers, HttpMethod.POST, URI.create(baseUri + "proto/write"));
 
         ResponseEntity<UserProtos.User> responseEntity =
                 restTemplate.exchange(requestEntity, UserProtos.User.class);
