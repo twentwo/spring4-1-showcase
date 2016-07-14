@@ -2,20 +2,22 @@ package com.github.zhangkaitao.proto;
 
 import com.github.zhangkaitao.pb.UserProtos;
 import com.github.zhangkaitao.web.controller.MyExtensionRegistryInitializer;
+import com.github.zhangkaitao.web.model.User;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.webapp.WebAppContext;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.RequestEntity;
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.*;
 import org.springframework.http.converter.protobuf.ExtensionRegistryInitializer;
 import org.springframework.http.converter.protobuf.ProtobufHttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
 
 import java.net.URI;
+
+import static org.hamcrest.CoreMatchers.containsString;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThat;
 
 /**
 * User: zhangkaitao
@@ -35,7 +37,7 @@ public class ProtoTest {
         //创建一个server
         server = new Server(8080);
         WebAppContext context = new WebAppContext();
-        String webapp = "spring4.1-mvc/src/main/webapp";
+        String webapp = "src/main/webapp";
         context.setDescriptor(webapp + "/WEB-INF/web.xml");  //指定web.xml配置文件
         context.setResourceBase(webapp);  //指定webapp目录
         context.setContextPath("/");
@@ -54,7 +56,6 @@ public class ProtoTest {
     public static void afterClass() throws Exception {
         server.stop(); //当测试结束时停止服务器
     }
-
 
     @Test
     public void testRead() {
