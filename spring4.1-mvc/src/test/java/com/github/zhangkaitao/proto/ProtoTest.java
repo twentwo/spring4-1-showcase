@@ -2,7 +2,6 @@ package com.github.zhangkaitao.proto;
 
 import com.github.zhangkaitao.pb.UserProtos;
 import com.github.zhangkaitao.web.controller.MyExtensionRegistryInitializer;
-import com.github.zhangkaitao.web.model.User;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.webapp.WebAppContext;
 import org.junit.AfterClass;
@@ -14,10 +13,6 @@ import org.springframework.http.converter.protobuf.ProtobufHttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
 
 import java.net.URI;
-
-import static org.hamcrest.CoreMatchers.containsString;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
 
 /**
 * User: zhangkaitao
