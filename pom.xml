@@ -26,7 +26,7 @@
         <cglib.version>3.0</cglib.version>
         <aspectj.version>1.8.1</aspectj.version>
         <aopalliance.version>1.0</aopalliance.version>
-        <spring.version>4.1.0.BUILD-SNAPSHOT</spring.version>
+        <spring.version>4.1.0.RELEASE</spring.version>
         <yaml.version>1.13</yaml.version>
         <ehcache-jcache.version>1.2</ehcache-jcache.version>
         <javax.cache.version>1.0.0</javax.cache.version>
@@ -179,33 +179,59 @@
     </dependencies>
 
     <repositories>
-        <!--<repository>
-            <id>spring-milestone</id>
-            <url>https://repo.spring.io/libs-milestone</url>
-        </repository>-->
-
         <repository>
-            <snapshots><enabled>true</enabled></snapshots>
-            <id>repository.spring.snapshot</id>
-            <name>Spring Snapshot Repository</name>
-            <url>http://repo.spring.io/snapshot</url>
+            <id>aliyunmaven</id>
+            <url>https://maven.aliyun.com/repository/public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>spring</id>
+            <url>https://maven.aliyun.com/repository/spring</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>google</id>
+            <url>https://maven.aliyun.com/repository/google</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
         </repository>
 
     </repositories>
     <pluginRepositories>
         <pluginRepository>
-            <id>dtrott</id>
-            <url>http://maven.davidtrott.com/repository</url>
+            <id>aliyunmaven</id>
+            <url>https://maven.aliyun.com/repository/public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
         </pluginRepository>
         <pluginRepository>
-            <id>central</id>
-            <name>Central Repository</name>
-            <url>https://repo.maven.apache.org/maven2</url>
+            <id>spring-plugin</id>
+            <url>https://maven.aliyun.com/repository/spring-plugin</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
         </pluginRepository>
-        <!--<pluginRepository>
-            <id>protoc-plugin</id>
-            <url>http://sergei-ivanov.github.com/maven-protoc-plugin/repo/releases/</url>
-        </pluginRepository>-->
     </pluginRepositories>
 
 </project>
